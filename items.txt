@@ -1,0 +1,19 @@
+*BASIS*
+1) forum over anime
+2) gebruikers aanmaken met bepaalde rechten (user en admin)
+3) gebruikers kunnen topics aanmaken en wijzigen
+4) reageren onder een topic
+5) reacties kunnen verwijderen en wijzigen
+6) database voor gebruikers
+7) profiel van de gebruiker bekijken en aanpassen
+8) categories voor de topics (discussion, problem, opinion etc)
+9) prioriteit van de topics
+10) gebruikers kunnen bannen voor een bepaalde periode (door admins)
+11) messageboard voor de admins
+12) zoekfunctie voor topics en gebruikers
+
+*EXTRA*
+1) berichten sturen tussen gebruikers
+2) anoniem comments aanmaken
+3) wachtwoord "blowfish"
+4) ban-lijst
