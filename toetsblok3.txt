@@ -1,0 +1,46 @@
+$_GET
+$_POST
+$_SERVER (method get of post)
+Geadvanceerde for loops (je moet er goed mee kunnen werken, niet alleen weten hoe het werkt) (!)
+Zelfde geldt voor foreach en while
+oop MYSQLI $row = $result->fetch_all(MYSQLI_ASSOC);
+CRUD (voor elke dimensie (patient, species, client etc.) een aparte map met daarin create.php, update.php & delete.php (retrieve zit in index))
+CODE SCHEIDEN! (index.php / index.logic.php)
+arrays!
+create.php:
+<?php 
+	require_once "index.logic.php"
+?>
+
+<form method="post"> (DUS GEEN action=""!!)
+</form>
+
+
+create.logic.php:
+<?php
+	if ($_SERVER['REQUEST_METHOD'] == "GET") {
+		Doe de start-up code; (bv database uitlezen)
+	} elseif ($_SERVER['REQUEST_METHOD'] == "POST") {
+		Doe de uitvoer code; (bv naar database schrijven)
+	}
+?>
+
+
+index.php:
+
+<p><?php echo (5 + 5); ?></p>
+
+FOUT GODVERRHEDOME FOUT
+
+index.php:
+<?php 
+	require "index.logic.php"
+?>
+<p><?=$answer?></p>
+
+
+index.logic.php:
+<?php
+	$answer = 5 + 5;
+	$answer = tostring($answer);
+?>
