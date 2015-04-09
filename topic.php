@@ -7,10 +7,6 @@
 	<link rel="icon" type="image/jpg" href="images/eye.png">
 </head>
 <body>
-<<<<<<< HEAD
 <?php require'small_codebehind/header.php' ?>
-=======
-	<h1> Hello World </h1>
->>>>>>> origin/master
 </body>
 </html>
