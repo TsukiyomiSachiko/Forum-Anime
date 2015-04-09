@@ -18,9 +18,10 @@
 					<option>Between 13 and 18</option>
 					<option>18 or above</option>
 				   </select>
-		</span>
-		<span>First name: <input type="text" name="first_name"></span>
-		<span>Last name: <input type="text" name="last_name"></span>
+		</span><br>
+		<span>First name: <input type="text" name="first_name"></span><br>
+		<span>Last name: <input type="text" name="last_name"></span><br>
+		<span><input class="button" type="submit" value="Send"/></span>
 	</form>
 </div>
 </body>
