@@ -5,7 +5,7 @@
 			<h3>login</h3>
 		</div>
 		<ul>
-			<li><a href="#">HOME</a></li>
+			<li><a href="index.php">HOME</a></li>
 			<li><a href="topic.php">TOPICS</a></li>
 			<li><a href="#">CONTACT</a></li>
 		</ul>
