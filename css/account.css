@@ -4,6 +4,12 @@ span {
 	margin-left: 10px;
 }
 
+input.button {
+	margin-left: auto;
+	margin-right: auto;
+	float:center !important;
+}
+
 div.register {
 	text-align: center;
 	width: 14.6%;
@@ -15,6 +21,12 @@ div.register input {
 	float: right;
 }
 
+select {
+	float: right;
+	width:173px;
+}
+
 .namepass {
 	float: left;
 }
+
