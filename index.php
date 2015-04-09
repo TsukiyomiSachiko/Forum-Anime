@@ -1,3 +1,4 @@
+<?php require'index.action.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
