@@ -1,4 +1,4 @@
-<?php require'register.action.php'; ?>
+<?php //require'register.action.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,7 @@
 <body>
 <?php require'small_codebehind/header.php' ?>
 	<div class="register">
-		<form method="post">
+		<form method="post" action="confirm.php">
 			<span><div class="namepass"> Username: </div><input type="text" name="username"></span><br>
 			<span><div class="namepass">Password: </div><input type="password" name="password"></span><br>
 			<span><div class="namepass">Email adress: </div><input type="text" name="email"></span><br>
