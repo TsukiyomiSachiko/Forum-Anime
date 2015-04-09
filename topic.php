@@ -6,6 +6,6 @@
 	<link rel="icon" type="image/jpg" href="images/rias.jpg">
 </head>
 <body>
-	
+<?php require'small_codebehind/header.php' ?>
 </body>
 </html>
