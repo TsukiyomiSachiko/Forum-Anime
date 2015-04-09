@@ -1,6 +1,6 @@
 <?php 
 	$connection = new mysqli('localhost', 'root', '', 'anime');
-	$query = ""
+	$query = "";
 	$result = $connection->query($query);
 	$games = $result->fetch_all(MYSQLI_ASSOC);	
 ?>
