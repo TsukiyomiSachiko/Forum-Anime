@@ -7,7 +7,7 @@ span {
 input.button {
 	margin-left: auto;
 	margin-right: auto;
-	float:center !important;
+	float: center !important;
 }
 
 div.register {
@@ -19,11 +19,12 @@ div.register {
 
 div.register input {
 	float: right;
+	width: 173px !important;
 }
 
 select {
 	float: right;
-	width:173px;
+	width: 177px;
 }
 
 .namepass {
