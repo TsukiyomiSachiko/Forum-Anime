@@ -1,0 +1,2 @@
+aantal posts (sql)
+user join date (sql)

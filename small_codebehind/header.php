@@ -4,9 +4,9 @@
 			<h3><a href="register.php">register</a></h3>
 			<h3>login</h3>
 		</div>
-		<ul>
+		<ul class="main">
 			<li><a href="index.php">HOME</a></li>
-			<li><a href="topic.php">TOPICS</a></li>
+			<li><a href="topic_main.php">TOPICS</a></li>
 			<li><a href="contact.php">CONTACT</a></li>
 		</ul>
 	</header>
