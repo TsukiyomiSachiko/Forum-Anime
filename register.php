@@ -1,3 +1,5 @@
+<?php require'register.action.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,7 @@
 		<form method="post">
 			<span><div class="namepass">Username: </div><input type="text" name="username"></span><br>
 			<span><div class="namepass">Password: </div><input type="password" name="password"></span><br>
-			<span>Email adress: <input type="text" name="email"></span><br>
+			<span>Email adress: <input type="email" name="email"></span><br>
 			<span>Age: <select name="age">
 						<option>Under 13</option>
 						<option>Between 13 and 18</option>
