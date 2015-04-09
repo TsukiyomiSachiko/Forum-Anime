@@ -1,6 +1,6 @@
 <?php 
 	$connection = new mysqli('localhost', 'root', '', 'anime');
-	$query = "select * from users";
+	$query = "";
 	$result = $connection->query($query);
 	$games = $result->fetch_all(MYSQLI_ASSOC);	
 ?>
