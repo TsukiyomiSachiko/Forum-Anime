@@ -14,7 +14,7 @@
 	</header>
 		<ul>
 			<li><a href="#">HOME</a></li>
-			<li><a href="#">TOPICS</a></li>
+			<li><a href="topic.php">TOPICS</a></li>
 			<li><a href="#">CONTACT</a></li>
 		</ul>
 
