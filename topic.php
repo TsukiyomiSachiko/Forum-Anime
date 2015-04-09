@@ -7,6 +7,9 @@
 	<link rel="icon" type="image/jpg" href="images/eye.png">
 </head>
 <body>
-<?php require'small_codebehind/header.php' ?>
+	<?php require'small_codebehind/header.php' ?>
+	<form>
+		<div class="newtopic"><span><input type="submit" value="New topic"></span></div>
+	</form>
 </body>
 </html>
