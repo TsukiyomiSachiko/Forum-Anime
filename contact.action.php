@@ -70,7 +70,7 @@ $msg1 = " $name Contacted Us.
 
 if(mail($email, $headers, $msg ) && mail("animeforum.stajl@gmail.com", $header, $msg1 ))
     {
-	$successMessage = "Message sent successfully.......";
+	$successMessage = "Message sent successfully.";
     }
   }
 else { $emailError = "Invalid Email"; }
