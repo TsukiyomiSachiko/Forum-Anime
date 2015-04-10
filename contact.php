@@ -33,5 +33,6 @@
 
 		</form>
 	</div>
+<?php require'small_codebehind/footer.php' ?>
 </body>
 </html>

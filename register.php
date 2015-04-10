@@ -25,6 +25,7 @@
 			</span><br><br>
 			<span><input class="button" type="submit" value="Send"/></span>
 	</form>
+<?php require'small_codebehind/footer.php' ?>
 </div>
 </body>
 </html>

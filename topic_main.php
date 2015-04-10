@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/jpg" href="images/eye.png">
 </head>
 <body>
-	<?php require'small_codebehind/header.php' ?>
+<?php require'small_codebehind/header.php' ?>
 	<form class="topicchange">
 		<div class="balkje"><div class="createtopic">
 		<a href="topic_change.php" class="href">Creat Topic</a>
@@ -22,5 +22,6 @@
 			<li><div class="postdate"> Hello World3 </div></li>
 		</ul>
 	</div>
+<?php require'small_codebehind/footer.php' ?>
 </body>
 </html>

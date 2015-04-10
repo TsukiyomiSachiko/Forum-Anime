@@ -9,5 +9,11 @@
 </head>
 <body>
 <?php require'small_codebehind/header.php' ?>
+
+
+
+
+
+<?php require'small_codebehind/footer.php' ?>
 </body>
 </html>
