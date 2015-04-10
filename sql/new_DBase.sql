@@ -49,6 +49,22 @@ DELETE FROM `comments`;
 /*!40000 ALTER TABLE `comments` ENABLE KEYS */;
 
 
+-- Structuur van  tabel anime.news wordt geschreven
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(1000) NOT NULL DEFAULT '0',
+  `comment` varchar(10000) NOT NULL DEFAULT '0',
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Dumpen data van tabel anime.news: ~0 rows (ongeveer)
+DELETE FROM `news`;
+/*!40000 ALTER TABLE `news` DISABLE KEYS */;
+/*!40000 ALTER TABLE `news` ENABLE KEYS */;
+
+
 -- Structuur van  tabel anime.topics wordt geschreven
 DROP TABLE IF EXISTS `topics`;
 CREATE TABLE IF NOT EXISTS `topics` (
@@ -76,6 +92,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(500) NOT NULL DEFAULT '0',
   `phonenumber` int(10) NOT NULL DEFAULT '0',
   `age` int(3) NOT NULL DEFAULT '0',
+  `rank` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
