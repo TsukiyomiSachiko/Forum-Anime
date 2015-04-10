@@ -93,6 +93,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `phonenumber` int(10) NOT NULL DEFAULT '0',
   `age` int(3) NOT NULL DEFAULT '0',
   `rank` int(11) NOT NULL DEFAULT '1',
+  `join_date` timestamp NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
