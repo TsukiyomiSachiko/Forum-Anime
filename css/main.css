@@ -10,8 +10,8 @@
 }
 
 body {
-	background-position: fixed;
 	background-image: url('../images/bg.jpg');
+	background-size: cover;
 }
 
 
