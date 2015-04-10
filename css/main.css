@@ -64,7 +64,8 @@ footer.footer{
 	width: 100%;
 	height:20px;
 	text-align: center;
-	margin-top:689px;
+	position: fixed;
+	bottom: 0px;
 	margin-left:auto;
 	margin-right:auto;
 	border-top: 1px solid #007ACC;
