@@ -14,7 +14,6 @@
 }
 
 ul.topics {
-	border: 1px solid #000000;
 	width: 70%;
 	text-align: center;
 	margin-left: auto;
@@ -26,19 +25,19 @@ div.alltopics ul.topics li.postname {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:80%;
+	width:68%;
 }
 
 .username {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:10%;
+	width:13%;
 }
 
 .postdate {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:9.5%;
+	width:14%;
 }

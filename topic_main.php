@@ -17,9 +17,11 @@
 	<div class="alltopics">
 		<?php require "topic.action.php" ?>
 		<ul class="topics">
-			<li class="postname"> Hello World1 </li>
-			<li class="username"> Hello World2 </li>
-			<li class="postdate"> Hello World3 </li>
+		<?php foreach ($topics as $topic): ?>
+			<li class="postname"> <?= $topic["postname"] ?></li>
+			<li class="username"> <?= $topic["username"] ?> </li>
+			<li class="postdate"> <?= $topic["postdate"] ?> </li>
+		<?php endforeach; ?>
 		</ul>
 	</div>
 <?php require'small_codebehind/footer.php' ?>
