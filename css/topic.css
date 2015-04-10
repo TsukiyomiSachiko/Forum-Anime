@@ -19,23 +19,26 @@ ul.topics {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto; 
+	margin-top:150px;
 }
 
-li.topic {
-	display:inline;
-}
-
-.postname {
+div.alltopics ul.topics li.postname {
 	border: 1px solid #000000;
-	display:inline;
+	display:inline-block;
+	float:left;
+	width:80%;
 }
 
 .username {
 	border: 1px solid #000000;
-	display:inline;
+	display:inline-block;
+	float:left;
+	width:10%;
 }
 
 .postdate {
 	border: 1px solid #000000;
-	display:inline;
+	display:inline-block;
+	float:left;
+	width:9.5%;
 }
