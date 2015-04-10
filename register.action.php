@@ -15,6 +15,6 @@
 		$last_name = $_POST['last_name'];
 		$connection = new mysqli('localhost', 'root', '', 'anime');
 		$query = "insert into users(username, password, email, age, first_name, last_name, phonenumber) values
-				  ( $username, $password, $email, $age, $first_name, $last_name, 1111111111;";
+				  ( '$username', '$password', '$email', '$age', '$first_name', '$last_name', 1111111111);";
 		mysqli_query($connection, $query);
 	endif;
