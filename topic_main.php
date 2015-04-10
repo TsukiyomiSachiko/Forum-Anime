@@ -17,9 +17,9 @@
 	<div class="alltopics">
 		<?php require "topic.action.php" ?>
 		<ul class="topics">
-			<li><div class="postname"> Hello World1 </div></li>
-			<li><div class="username"> Hello World2 </div></li>
-			<li><div class="postdate"> Hello World3 </div></li>
+			<li class="topic"><div class="postname"> Hello World1 </div></li>
+			<li class="topic"><div class="username"> Hello World2 </div></li>
+			<li class="topic"><div class="postdate"> Hello World3 </div></li>
 		</ul>
 	</div>
 <?php require'small_codebehind/footer.php' ?>

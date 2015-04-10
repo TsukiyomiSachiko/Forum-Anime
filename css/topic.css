@@ -13,7 +13,7 @@
 	padding-right: 20px;
 }
 
-.topics {
+ul.topics {
 	border: 1px solid #000000;
 	width: 70%;
 	text-align: center;
@@ -21,17 +21,21 @@
 	margin-right: auto; 
 }
 
-.postname {
+li.topic {
 	display:inline;
+}
+
+.postname {
 	border: 1px solid #000000;
+	display:inline;
 }
 
 .username {
-	display:inline;
 	border: 1px solid #000000;
+	display:inline;
 }
 
 .postdate {
-	display:inline;
 	border: 1px solid #000000;
+	display:inline;
 }
