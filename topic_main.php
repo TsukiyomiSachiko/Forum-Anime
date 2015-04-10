@@ -10,7 +10,7 @@
 <?php require'small_codebehind/header.php' ?>
 	<form class="topicchange">
 		<div class="balkje"><div class="createtopic">
-		<a href="topic_change.php" class="href">Creat Topic</a>
+		<a href="topic_change.php" class="href">Create Topic</a>
 		<a href="topic_change.php" class="href">Edit Topic</a>
 		<a href="topic_change.php" class="href">Delete Topic</a></div></div>
 	</form>
