@@ -2,25 +2,24 @@
 <html>
 <head>
 	<title>Topics</title>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/topic.css">
 	<link rel="icon" type="image/jpg" href="images/eye.png">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <?php require'small_codebehind/header.php' ?>
-	<form class="topicchange">
-		<div class="balkje"><div class="createtopic">
-		<a href="topic_change.php" class="href">Create Topic</a>
-		<a href="topic_change.php" class="href">Edit Topic</a>
-		<a href="topic_change.php" class="href">Delete Topic</a></div></div>
+	<form class="topic_topicchange">
+		<div class="topic_balkje"><div class="createtopic">
+		<a href="topic_change.php" class="topic_href">Create Topic</a>
+		<a href="topic_change.php" class="topic_href">Edit Topic</a>
+		<a href="topic_change.php" class="topic_href">Delete Topic</a></div></div>
 	</form>
-	<div class="alltopics">
+	<div class="topic_alltopics">
 		<?php require "topic.action.php" ?>
-		<ul class="topics">
+		<ul class="topic_topics">
 		<?php foreach ($topics as $topic): ?>
-			<li class="postname"> <?= $topic["postname"] ?></li>
-			<li class="username"> <?= $topic["username"] ?> </li>
-			<li class="postdate"> <?= $topic["postdate"] ?> </li>
+			<li class="topic_postname"> <?= $topic["postname"] ?></li>
+			<li class="topic_username"> <?= $topic["username"] ?> </li>
+			<li class="topic_postdate"> <?= $topic["postdate"] ?> </li>
 		<?php endforeach; ?>
 		</ul>
 	</div>
