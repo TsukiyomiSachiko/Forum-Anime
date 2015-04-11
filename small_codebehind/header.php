@@ -7,6 +7,7 @@
 		<ul class="main_menu">
 			<li><a href="index.php">HOME</a></li>
 			<li><a href="topic_main.php">TOPICS</a></li>
+			<li><a href="adminboard.php">ADMIN-BOARD</a></li>
 			<li><a href="contact.php">CONTACT</a></li>
 		</ul>
 	</header>
