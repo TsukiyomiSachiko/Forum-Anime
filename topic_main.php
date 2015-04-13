@@ -9,17 +9,19 @@
 <?php require'small_codebehind/header.php' ?>
 	<form class="topic_topicchange">
 		<div class="topic_balkje"><div class="createtopic">
-		<a href="topic_change.php" class="topic_href">Create Topic</a>
-		<a href="topic_change.php" class="topic_href">Edit Topic</a>
-		<a href="topic_change.php" class="topic_href">Delete Topic</a></div></div>
+			<h2><a href="topic_create.php" class="topic_create"><font color="#FF5789">Create Topic</font></a></h2>
+		</div>
 	</form>
 	<div class="topic_alltopics">
 		<?php require "topic.action.php" ?>
 		<ul class="topic_topics">
 		<?php foreach ($topics as $topic): ?>
-			<li class="topic_postname"> <?= $topic["postname"] ?></li>
-			<li class="topic_username"> <?= $topic["username"] ?> </li>
-			<li class="topic_postdate"> <?= $topic["postdate"] ?> </li>
+			<li class="topic_postname"><a href="#" class="topic_postname_link"><?= $topic["postname"] ?></a></li>
+			<li class="topic_username"><a href="#" class="topic_postname_link"><?= $topic["username"] ?></a></li>
+			<li class="topic_postdate"><?= $topic["postdate"] ?></li>
+			<li class="topic_edit"><a href="#" class="topic_href">Edit Topic</a></li>
+			<li class="topic_remove"><a href="#" class="topic_href">Delete Topic</a></li>
+		</div>
 		<?php endforeach; ?>
 		</ul>
 	</div>

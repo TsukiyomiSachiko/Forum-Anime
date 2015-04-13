@@ -211,7 +211,7 @@ a.confirm_a {
 
 }
 
-/* Start topic here */
+/* Start topic_main here */
 .topic_createtopic {
 	text-align: center;
 	font-size: 18px;
@@ -223,12 +223,14 @@ a.confirm_a {
 
 }
 
-.topic_href {
-	padding-right: 20px;
+a.topic_create {
+	padding-right: 2px;
+	text-align: center;
+	text-decoration:none;
 }
 
 ul.topic_topics {
-	width: 70%;
+	width: 80%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto; 
@@ -239,19 +241,74 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:68%;
+	width:59%;
+	background-color: rgba(148, 215, 200, 0.7);
 }
 
 .topic_username {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:13%;
+	width:8.5%;
+	background-color: rgba(148, 215, 200, 0.7);
 }
 
 .topic_postdate {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:14%;
+	width:12%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
+
+.topic_edit {
+	border: 1px solid #000000;
+	display:inline-block;
+	float:left;
+	width:6%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
+
+.topic_remove {
+	border: 1px solid #000000;
+	display:inline-block;
+	float:left;
+	width:7%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
+
+/*Start topic_create here*/
+form.topic_create{
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-top:150px;
+}
+
+li.topic_create {
+	display:inline-block;
+	padding-right: 15px;
+}
+
+.topic_create_subject {
+	text-align: center;
+}
+
+.topic_title {
+
+}
+
+.topic_create_title {
+
+}
+.topic_content {
+
+}
+
+.topic_create_content {
+	width:800px;
+	height:200px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgba(148, 215, 200, 0.5);
 }
