@@ -342,6 +342,8 @@ li.topic_create {
 
 .topic_create_subject {
 	text-align: center;
+	background-color: rgba(148, 215, 200, 0.5);
+	margin-top: 10px;
 }
 
 .topic_title {
@@ -349,15 +351,24 @@ li.topic_create {
 }
 
 .topic_create_title {
-
+	display:inline;
+	height: 15px;
+	width: 800px;
+	margin-top: 40px;
 }
 .topic_content {
+	margin-top: 40px;
 
 }
 
 .topic_create_content {
 	width:800px;
 	height:200px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgba(148, 215, 200, 0.5);
+}
+
+textarea.topic_create_title {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	background-color: rgba(148, 215, 200, 0.5);
 }
