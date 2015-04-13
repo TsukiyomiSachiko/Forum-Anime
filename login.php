@@ -9,6 +9,7 @@
   <?php require 'small_codebehind/header.php' ?>
   <div class="register_container">
     <div class="register_form">
+      <h1 class="register_h1">Log in here</h1><hf>
       <form action="login.action.php" method="post">
         <label class="register_label">Username: </label><br>
         <input class="register_input" type="text" name="username"><br>
