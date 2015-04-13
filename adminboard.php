@@ -1,4 +1,4 @@
-<?php require'index.action.php' ?>
+<?php require'adminboard.action.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +8,11 @@
 </head>
 <body>
 <?php require'small_codebehind/header.php' ?>
-
-
-
-
-
+<?= foreach ($pins as $pin): ?>
+	<div class="">
+		
+	</div>
+<?= endforeach; ?>
 <?php require'small_codebehind/footer.php' ?>
 </body>
 </html>
