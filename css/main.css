@@ -74,9 +74,15 @@ footer.main_footer{
 	border-top: 1px solid #007ACC;
 }
 
-/* Start index here */
-
-
+/* Start index/news here */
+.createnews {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	color:blue;
+	width:12%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
 
 /* Start contact here */
 h1.contact_h1 {
@@ -301,20 +307,7 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-<<<<<<< HEAD
 	width:14%;
-}
-
-/* start news here */
-.createnews {
-	text-align: center;
-	font-size: 15px;
-	font-weight: 500;
-	color:blue;
-}
-=======
-	width:12%;
-	background-color: rgba(148, 215, 200, 0.7);
 }
 
 .topic_edit {
@@ -368,4 +361,3 @@ li.topic_create {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	background-color: rgba(148, 215, 200, 0.5);
 }
->>>>>>> origin/master
