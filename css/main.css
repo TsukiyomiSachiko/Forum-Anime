@@ -169,49 +169,93 @@ input.contact_submit:hover{
     box-shadow: 5px 5px 7px rgba(108, 195, 186, 0.5)
 }
 
-/* Start register here */
-span.register_span {
-	position: center;
-	padding-top: 10px;
-	margin-left: 10px;
+/* Start account here */
+h1.account_h1 {
+	font-family: arial;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 15px 35px;
+	margin: -10px -50px;
+	text-align:center;
+	border-radius: 10px 10px 0 0;
 }
 
-input.register_button {
-	margin-left: auto;
-	margin-right: auto;
-	float: center !important;
+hr {
+	margin: 10px -50px;
+	border: 0; 
+	border-top: 1px solid #ccc;
 }
 
-div.register_register {
-	text-align: center;
-	width: 14.6%;
-	margin-left: auto;
-	margin-right: auto;
+div.account_container {
+	width: 1000px;
+	height: 610px;
+	margin:35px auto;
+	font-family: 'Raleway', sans-serif;
 }
 
-div.register_register input {
-	float: right;
-	width: 173px !important;
+div.account_form {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 1000px;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding: 10px 50px 30px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	float:left;
 }
 
-select.register_select {
-	float: right;
-	width: 177px;
+input.account_input[type=text], input.account_input[type=password] {
+	width: 97.7%;
+	height: 34px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 16px;
+	border-radius: 5px;
 }
 
-div.register_namepass {
-	float: left;
+select.account_select {
+	width: 97.7%;
+	height: 34px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 16px;
+	border-radius: 5px;
 }
 
-p.confirm_p {
-
+label.account_label {
+	font-family: arial;
+	color: #464646;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 14px;
+	font-weight: bold;
 }
 
-a.confirm_a {
-
+input.account_submit{
+	padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background: linear-gradient(#6CC3BA 5%, #007ACC 100%);
+    border: 2px solid #007ACC;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 1px 0px #13506D;
+	width: 97.7%;
+	border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0, 122, 204, 0.5)
 }
 
-/* Start topic here */
+input.account_submit:hover{
+    background: linear-gradient(#007ACC 5%, #6CC3BA 100%);
+    box-shadow: 5px 5px 7px rgba(108, 195, 186, 0.5)
+}
+
+/* Start topic_main here */
 .topic_createtopic {
 	text-align: center;
 	font-size: 18px;
@@ -223,12 +267,14 @@ a.confirm_a {
 
 }
 
-.topic_href {
-	padding-right: 20px;
+a.topic_create {
+	padding-right: 2px;
+	text-align: center;
+	text-decoration:none;
 }
 
 ul.topic_topics {
-	width: 70%;
+	width: 80%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto; 
@@ -239,20 +285,23 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:68%;
+	width:59%;
+	background-color: rgba(148, 215, 200, 0.7);
 }
 
 .topic_username {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:13%;
+	width:8.5%;
+	background-color: rgba(148, 215, 200, 0.7);
 }
 
 .topic_postdate {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
+<<<<<<< HEAD
 	width:14%;
 }
 
@@ -263,3 +312,60 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	font-weight: 500;
 	color:blue;
 }
+=======
+	width:12%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
+
+.topic_edit {
+	border: 1px solid #000000;
+	display:inline-block;
+	float:left;
+	width:6%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
+
+.topic_remove {
+	border: 1px solid #000000;
+	display:inline-block;
+	float:left;
+	width:7%;
+	background-color: rgba(148, 215, 200, 0.7);
+}
+
+/*Start topic_create here*/
+form.topic_create{
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-top:150px;
+}
+
+li.topic_create {
+	display:inline-block;
+	padding-right: 15px;
+}
+
+.topic_create_subject {
+	text-align: center;
+}
+
+.topic_title {
+
+}
+
+.topic_create_title {
+
+}
+.topic_content {
+
+}
+
+.topic_create_content {
+	width:800px;
+	height:200px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgba(148, 215, 200, 0.5);
+}
+>>>>>>> origin/master
