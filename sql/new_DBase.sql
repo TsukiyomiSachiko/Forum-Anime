@@ -20,7 +20,6 @@ USE `anime`;
 DROP TABLE IF EXISTS `adminboard`;
 CREATE TABLE IF NOT EXISTS `adminboard` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(250) NOT NULL DEFAULT '0',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) NOT NULL DEFAULT '0',
   `title` varchar(1000) NOT NULL,
