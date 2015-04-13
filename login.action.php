@@ -1,4 +1,5 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] == "POST") :
 $connection = new mysqli('localhost', 'root', '', 'anime');
 	$password = $_POST['pass'];
 	$query = 'SELECT * FROM users';
@@ -18,4 +19,5 @@ $connection = new mysqli('localhost', 'root', '', 'anime');
 		}
 	endforeach;
 header('location:index.php?log='.$log);
+endif;
 ?>
