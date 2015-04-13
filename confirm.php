@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="refresh" content="2.5;index.php" />
+	<meta http-equiv="refresh" content="10;index.php" />
 	<title>Register</title>
 	<link rel="icon" type="image/jpg" href="images/eye.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
