@@ -10,7 +10,7 @@
 <?php require'small_codebehind/header.php' ?>
 
 
-
+<?php include'news.action.php' ?>
 
 
 <?php require'small_codebehind/footer.php' ?>

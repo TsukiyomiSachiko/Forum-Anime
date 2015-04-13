@@ -255,3 +255,11 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	float:left;
 	width:14%;
 }
+
+/* start news here */
+.createnews {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	color:blue;
+}
