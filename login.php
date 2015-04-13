@@ -7,18 +7,18 @@
 </head>
 <body>
   <?php require 'small_codebehind/header.php' ?>
-  <div class="register_container">
-    <div class="register_form">
-      <h1 class="register_h1">Log in here</h1><hf>
+  <div class="account_container">
+    <div class="account_form">
+      <h1 class="account_h1">Log in here</h1><hf/><br>
       <form action="login.action.php" method="post">
-        <label class="register_label">Username: </label><br>
-        <input class="register_input" type="text" name="username"><br>
+        <label class="account_label">Username: </label><br>
+        <input class="account_input" type="text" name="username"><br>
 
-        <label class="register_label">Password: </label><br>
-        <input class="register_input" type="password" name="password"><br>
+        <label class="account_label">Password: </label><br>
+        <input class="account_input" type="password" name="password"><br>
 
         <br><br>
-        <input class="register_submit" type="submit" value="Send"/>
+        <input class="account_submit" type="submit" value="Send"/>
       </form>
     </div>
   </div>
