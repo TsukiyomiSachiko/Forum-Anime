@@ -170,45 +170,89 @@ input.contact_submit:hover{
 }
 
 /* Start register here */
-span.register_span {
-	position: center;
-	padding-top: 10px;
-	margin-left: 10px;
+h1.register_h1 {
+	font-family: arial;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 15px 35px;
+	margin: -10px -50px;
+	text-align:center;
+	border-radius: 10px 10px 0 0;
 }
 
-input.register_button {
-	margin-left: auto;
-	margin-right: auto;
-	float: center !important;
+hr {
+	margin: 10px -50px;
+	border: 0; 
+	border-top: 1px solid #ccc;
 }
 
-div.register_register {
-	text-align: center;
-	width: 14.6%;
-	margin-left: auto;
-	margin-right: auto;
+div.register_container {
+	width: 1000px;
+	height: 610px;
+	margin:35px auto;
+	font-family: 'Raleway', sans-serif;
 }
 
-div.register_register input {
-	float: right;
-	width: 173px !important;
+div.register_form {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 1000px;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding: 10px 50px 30px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	float:left;
+}
+
+input.register_input[type=text], input.register_input[type=password] {
+	width: 97.7%;
+	height: 34px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 16px;
+	border-radius: 5px;
 }
 
 select.register_select {
-	float: right;
-	width: 177px;
+	width: 97.7%;
+	height: 34px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 16px;
+	border-radius: 5px;
 }
 
-div.register_namepass {
-	float: left;
+label.register_label {
+	font-family: arial;
+	color: #464646;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 14px;
+	font-weight: bold;
 }
 
-p.confirm_p {
-
+input.register_submit{
+	padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background: linear-gradient(#6CC3BA 5%, #007ACC 100%);
+    border: 2px solid #007ACC;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 1px 0px #13506D;
+	width: 97.7%;
+	border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0, 122, 204, 0.5)
 }
 
-a.confirm_a {
-
+input.register_submit:hover{
+    background: linear-gradient(#007ACC 5%, #6CC3BA 100%);
+    box-shadow: 5px 5px 7px rgba(108, 195, 186, 0.5)
 }
 
 /* Start topic_main here */
