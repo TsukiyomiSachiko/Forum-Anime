@@ -1,4 +1,4 @@
-<?php //require'register.action.php'; ?>
+<?php require'register.action.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
 	<div class="account_container">
 		<div class="account_form">
 		<h1 class="account_h1">Make your account here</h1><hr/><br>
-			<form method="post" action="confirm.php">
+			<form method="post" action="<?= $website ?>">
 				<label class="account_label">Username: </label><br>
 				<input class="account_input" type="text" name="username"><br>
 
