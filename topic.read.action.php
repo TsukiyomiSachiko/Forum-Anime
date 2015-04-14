@@ -1,4 +1,7 @@
-<?php if(isset($_GET['content'])):
+<?php 
+	session_start();
+
+	if(isset($_GET['content'])):
 		$content = $_GET['content'];
 	endif;
 

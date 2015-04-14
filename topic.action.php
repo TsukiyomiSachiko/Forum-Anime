@@ -1,4 +1,5 @@
 <?php 
+	session_start();
 	 if ($page == "main"):
 		$connection = new mysqli('localhost', 'root', '', 'anime');
 		$query = "SELECT topics.name AS postname, users.username AS username, topics.date AS postdate, topics.reason AS reason, comments.contents AS content FROM topics LEFT JOIN users ON users.id = topics.user_id LEFT JOIN comments ON comments.topic_id = topics.id"; //anders uitlijnen indien nodig

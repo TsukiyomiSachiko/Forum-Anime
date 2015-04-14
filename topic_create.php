@@ -1,6 +1,5 @@
 <?php  $page = 'create';
-	require'small_codebehind/header.php';
-	session_start();
+	require'topic.action.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +10,7 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
+	<?php require'small_codebehind/header.php'; ?>
 		<form class="topic_create" action="topic_read.php">
 			<h2>What is your topic about?</h2>
 			<span class="topic_create_reason">
