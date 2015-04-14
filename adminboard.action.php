@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	unset($_SESSION['login']);
 	$user_id = "";
 	if(isset($_SESSION['login'])):
 		$user_id = $_SESSION['login'];
