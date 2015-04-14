@@ -1,4 +1,4 @@
-<?php //require'adminboard.action.php' ?>
+<?php require'adminboard.action.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php require'small_codebehind/header.php' ?>
-<a class="adminboard_a" href="create_pin.php">create pin</a>
+<a class="adminboard_a" href="create_pin.php?case=create">create pin</a>
 
 <?php require'small_codebehind/footer.php' ?>
 </body>

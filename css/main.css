@@ -410,7 +410,7 @@ div.create_pin_form {
 	float:left;
 }
 
-input.create_pin_input[type=text] {
+input.create_pin_input[type=text],textarea.create_pin_message_input {
 	width: 97.7%;
 	height: 34px;
 	padding-left: 5px;
@@ -460,4 +460,9 @@ input.create_pin_submit{
 input.create_pin_submit:hover{
     background: linear-gradient(#007ACC 5%, #6CC3BA 100%);
     box-shadow: 5px 5px 7px rgba(108, 195, 186, 0.5)
+}
+
+textarea.create_pin_message_input {
+	resize:none;
+	height:80px;
 }
