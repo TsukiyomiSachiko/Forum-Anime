@@ -16,5 +16,5 @@ switch ($rank) {
     	break;
 
     default:
-        echo 'Je bent geen user, dus je mag niks';
+        echo 'Je bent geen user, dus je mag nepnep';
     }
