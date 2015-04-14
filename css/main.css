@@ -472,3 +472,30 @@ textarea.create_pin_message_input {
 	resize:none;
 	height:80px;
 }
+
+h1.adminboard_text, h3.adminboard_text, h2.adminboard_text, {
+	font-family: arial;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 15px 35px;
+	margin: -10px -50px;
+	text-align:center;
+	border-radius: 10px 10px 0 0;
+}
+
+div.adminboard_container {
+	width: 1000px;
+	height: 610px;
+	margin:35px auto;
+	font-family: 'Raleway', sans-serif;
+}
+
+div.adminboard_pin_div {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 1000px;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding: 10px 50px 30px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	float:left;
+}

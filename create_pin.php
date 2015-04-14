@@ -11,7 +11,7 @@
 	<div class="create_pin_container">
 		<div class="contact_form">
 			<h1 class="create_pin_h1">create a pin here so that the admins can see it</h1><hr/><br>
-			<form method="post" action="create_pin.php?case=create">
+			<form method="post" action="create_pin.php">
 			
 			<label class="create_pin_label">Title :</label><br>
 			<input class="create_pin_input" type="text" name="title" value=""><br><br>
