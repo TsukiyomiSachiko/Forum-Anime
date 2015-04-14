@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER['REQUEST_METHOD'] == "POST") :
 $connection = new mysqli('localhost', 'root', '', 'anime');
 	$password = $_POST['password'];
