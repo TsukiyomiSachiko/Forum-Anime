@@ -1,4 +1,4 @@
-<?php require'index.action.php' ?>
+<?php require'index.action.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<?php require'small_codebehind/header.php' ?>
-
-
-<?php include'news.action.php' ?>
-
-
-<?php require'small_codebehind/footer.php' ?>
+<?php require'small_codebehind/header.php';
+foreach($news as $item):?>
+	<h2><?= $item['title'] ?></h2>
+	<p><?= $item['comment'] ?></p>
+<?php endforeach;
+require'small_codebehind/footer.php'; ?>
 </body>
 </html>

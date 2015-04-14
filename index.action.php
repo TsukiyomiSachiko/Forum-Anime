@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	$connection = new mysqli('localhost', 'root', '', 'anime');
-	$query = "select * from users";
+	$query = "select * from news";
 	$result = $connection->query($query);
 	$news = $result->fetch_all(MYSQLI_ASSOC);
 
