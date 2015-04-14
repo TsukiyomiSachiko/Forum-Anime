@@ -7,6 +7,11 @@
 	if(empty($_POST['username']) and empty($_POST['password']) and empty($_POST['email']) and empty($_POST['age']) and empty($_POST['first_name']) and empty($_POST['last_name'])):
 		echo'Not done';
 	else:
+	$username = $_POST['username'];
+	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+	$email = $_POST['email'];
+	$first_name = $_POST['first_name'];
+	$last_name = $_POST['last_name'];
 		foreach($results as $result):
 			if($result['username'] == $username):
 				header('location:register.php?false=usertaken');
@@ -24,11 +29,6 @@
 				endif;
 			endif;
 		endforeach;
-	$username = $_POST['username'];
-	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-	$email = $_POST['email'];
-	$first_name = $_POST['first_name'];
-	$last_name = $_POST['last_name'];
 	$query = "insert into users(username, password, email, age, first_name, last_name, phonenumber) values
 				('$username', '$password', '$email', '$age', '$first_name', '$last_name', 1111111111);";
 	mysqli_query($connection, $query);

@@ -17,7 +17,7 @@
 				<input type="hidden" value="<?=$_SESSION['login']?>">
 				<input class="topic_create_reason" type="radio" name="reason" value="1"><label>A story</label>
 				<input class="topic_create_reason" type="radio" name="reason" value="2"><label>A question</label>
-				<input class="topic_create_reason" type="radio" name="reason" value="3"><label>A discution</label>
+				<input class="topic_create_reason" type="radio" name="reason" value="3"><label>A discussion</label>
 				<input class="topic_create_reason" type="radio" name="reason" value="4"><label>Anything different</label>
 			</span>
 			<div class="topic_title"><h2 class="topic_create_title">Title:</h2><textarea class="topic_create_title" name="title"></textarea></div>
