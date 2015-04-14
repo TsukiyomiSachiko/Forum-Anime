@@ -1,11 +1,11 @@
 	<header>
 		<div class="main_balk">
 			<h3 class="main_mark">AUTISME & CO</h3>
-<?php session_start(); if(empty($_SESSION['login'])): ?>
+<?php if(empty($_SESSION['login'])): ?>
 			<h3><a href="register.php">register</a></h3>
 			<h3><a href="login.php">login</a></h3>
 <?php else: ?>
-			<h3>Welcome user</h3>
+			<h3>Welcome user <a href="index.php?log=out">Logout</a></h3>
 <?php endif; ?>
 		</div>
 		<ul class="main_menu">

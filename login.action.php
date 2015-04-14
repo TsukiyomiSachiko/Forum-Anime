@@ -1,8 +1,8 @@
 <?php
-session_start();
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") :
 	session_start();
-$connection = new mysqli('localhost', 'root', '', 'anime');
+	$connection = new mysqli('localhost', 'root', '', 'anime');
 	$password = $_POST['password'];
 	$query = 'SELECT * FROM users';
 	$result = $connection->query($query);
@@ -12,7 +12,7 @@ $connection = new mysqli('localhost', 'root', '', 'anime');
 		{
 			if (password_verify($password, $quser['password'])){
 				$_SESSION['rank'] = $quser['rank'];
-				$_SESSION['login'] = $quser['login'];
+				$_SESSION['login'] = $quser['id'];
 				$log = 'true';
 				break ; }
 				else {
