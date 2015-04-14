@@ -7,11 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<?php require'small_codebehind/header.php';
-foreach($news as $item):?>
-	<h2><?= $item['title'] ?></h2>
-	<p><?= $item['comment'] ?></p>
-<?php endforeach;
-require'small_codebehind/footer.php'; ?>
+<?php require'small_codebehind/header.php'; ?>
+<div class="index_container">
+<?php foreach($news as $item):?>
+	<div class="index_item_div">
+		<h1 class="index_text"><?= $item['title'] ?></h1>
+		<h2 class="index_text"><?= $item['comment'] ?></h2>
+	</div>
+<?php endforeach; ?>
+</div>
+<?php require'small_codebehind/footer.php'; ?>
 </body>
 </html>

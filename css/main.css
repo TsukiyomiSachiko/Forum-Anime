@@ -84,6 +84,34 @@ footer.main_footer{
 	background-color: rgba(148, 215, 200, 0.7);
 }
 
+div.index_container {
+	width: 1000px;
+	height: 610px;
+	margin:35px auto;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1.index_text, h2.index_text, {
+	font-family: arial;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 15px 35px;
+	margin: -10px -50px;
+	text-align:center;
+	border-radius: 10px 10px 0 0;
+}
+
+div.index_item_div {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 1000px;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding: 10px 50px 30px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	float:left;
+	margin-top: 50px;
+}
+
 /* Start contact here */
 h1.contact_h1 {
 	font-family: arial;
