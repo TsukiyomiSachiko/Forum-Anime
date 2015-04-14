@@ -1,6 +1,6 @@
 <?php
 	$connection = new mysqli('localhost', 'root', '', 'anime');
-
+	session_start();
 	$user_id = "7";
 
 	if(isset($_SESSION['login'])):
