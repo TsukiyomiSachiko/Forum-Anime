@@ -499,3 +499,9 @@ div.adminboard_pin_div {
 	border-radius: 10px;
 	float:left;
 }
+
+span.create_pin_error {
+	color: red;
+	font-family: arial;
+	font-size: 20px;
+}

@@ -1,4 +1,7 @@
 <?php
+	$titleError = "";
+	$commentError = "";
+
 	$connection = new mysqli('localhost', 'root', '', 'anime');
 	session_start();
 	$user_id = "7";
@@ -8,21 +11,25 @@
 	endif;
 
 	if($_SERVER['REQUEST_METHOD']=="POST"):
-		if(isset($_POST['title'])):
-			$title = $connection->escape_string ($_POST['title']);
-		else:
-			$title = $connection->escape_string ("");
+ 		if(isset($_POST['submit'])):
+ 			if(empty($_POST['title'])):
+    			$titleError = "Title is required";
+   			else:
+					$title = $connection->escape_string ($_POST['title']);
+			endif;
+			if(empty($_POST['comment'])):
+    			$commentError = "Comment is required";
+   			else:
+					$comment = $connection->escape_string ($_POST['comment']);
+			endif;
+			if(!empty($_POST['title']) and !empty($_POST['comment'])):
+			 	$query = "insert into adminboard(title, comment, user_id) values
+				('$title', '$comment', $user_id)";
+				mysqli_query($connection, $query);
+			endif;
 		endif;
-		if(isset($_POST['comment'])):
-			$comment = $connection->escape_string ($_POST['comment']);
-		else:
-			$comment = $connection->escape_string ("");
-		endif;
-	 	$query = "insert into adminboard(title, comment, user_id) values
-		('$title', '$comment', $user_id)";
-		mysqli_query($connection, $query);
 	else:
-		$query = "select date, title, comment from adminboard";
-		$result = $connection->query($query);
-		$pins = $result->fetch_all(MYSQLI_ASSOC);
+			$query = "select date, title, comment from adminboard";
+			$result = $connection->query($query);
+			$pins = $result->fetch_all(MYSQLI_ASSOC);
  	endif;

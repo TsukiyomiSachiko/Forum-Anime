@@ -14,10 +14,12 @@
 			<form method="post" action="create_pin.php">
 			
 			<label class="create_pin_label">Title :</label><br>
-			<input class="create_pin_input" type="text" name="title" value=""><br><br>
+			<input class="create_pin_input" type="text" name="title" value=""><br>
+			<span class="create_pin_error"><?php echo $titleError; ?></span><br><br>
 
 			<label class="create_pin_label">Comment :</label><br>
-			<textarea class="create_pin_message_input" name="comment" value=""></textarea><br><br>
+			<textarea class="create_pin_message_input" name="comment" value=""></textarea><br>
+			<span class="create_pin_error"><?php echo $commentError ?></span><br><br>
 
 			<input class="create_pin_submit" type="submit" name="submit" value="submit"><br><br>
 			</form>
