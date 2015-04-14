@@ -1,22 +1,24 @@
 <?php
-	$user_id = "";
+	$connection = new mysqli('localhost', 'root', '', 'anime');
+
+	$user_id = "7";
+
 	if(isset($_SESSION['login'])):
 		$user_id = $_SESSION['login'];
 	endif;
 	if(isset($_POST['title'])):
-		$title = $_POST['title'];
+		$title = $connection->escape_string ($_POST['title']);
 	else:
-		$title = "I am empty";
+		$title = $connection->escape_string ("I am empty");
 	endif;
 	if(isset($_POST['comment'])):
-		$comment = $_POST['comment'];
+		$comment = $connection->escape_string ($_POST['comment']);
 	else:
-		$comment = "I am probably empty";
+		$comment = $connection->escape_string ("I am probably empty");
 	endif;
-	$connection = new mysqli('localhost', 'root', '', 'anime');
  	if($_GET['case'] == "create"):
- 		$query = "insert into 'adminboard'(title, comment, user_id) values
-		('$title', '$comment', '$user_id')";
+ 		$query = "insert into adminboard(title, comment, user_id) values
+		('$title', '$comment', $user_id)";
 		mysqli_query($connection, $query);
 	else:
 		$query = "select date, user_id, title, comment from adminboard";
