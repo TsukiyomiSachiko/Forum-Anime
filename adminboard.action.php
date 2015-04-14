@@ -1,14 +1,8 @@
 <?php
-<<<<<<< HEAD
 	$connection = new mysqli('localhost', 'root', '', 'anime');
 
 	$user_id = "7";
 
-=======
-	session_start();
-	unset($_SESSION['login']);
-	$user_id = "";
->>>>>>> origin/master
 	if(isset($_SESSION['login'])):
 		$user_id = $_SESSION['login'];
 	endif;
