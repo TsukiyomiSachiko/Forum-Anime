@@ -291,7 +291,7 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:59%;
+	width:67%;
 	background-color: rgba(148, 215, 200, 0.7);
 }
 
@@ -303,11 +303,12 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 	background-color: rgba(148, 215, 200, 0.7);
 }
 
-.topic_postdate {
+.topic_reason {
 	border: 1px solid #000000;
 	display:inline-block;
 	float:left;
-	width:14%;
+	width:10%;
+	background-color: rgba(148, 215, 200, 0.7);
 }
 
 .topic_edit {
@@ -340,7 +341,7 @@ li.topic_create {
 	padding-right: 15px;
 }
 
-.topic_create_subject {
+.topic_create_reason {
 	text-align: center;
 	background-color: rgba(148, 215, 200, 0.5);
 	margin-top: 10px;
@@ -372,6 +373,8 @@ textarea.topic_create_title {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	background-color: rgba(148, 215, 200, 0.5);
 }
+
+
 
 /* start adminboard here */
 h1.create_pin_h1 {

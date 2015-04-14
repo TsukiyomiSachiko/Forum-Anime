@@ -1,3 +1,6 @@
+<?php $page = "main"; 
+	require "topic.action.php";?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,12 +16,11 @@
 		</div>
 	</form>
 	<div class="topic_alltopics">
-		<?php require "topic.action.php" ?>
 		<ul class="topic_topics">
 		<?php foreach ($topics as $topic): ?>
 			<li class="topic_postname"><a href="#" class="topic_postname_link"><?= $topic["postname"] ?></a></li>
 			<li class="topic_username"><a href="#" class="topic_postname_link"><?= $topic["username"] ?></a></li>
-			<li class="topic_postdate"><?= $topic["postdate"] ?></li>
+			<li class="topic_reason"><?= $topic["reason"] ?></li>			
 			<li class="topic_edit"><a href="#" class="topic_href">Edit Topic</a></li>
 			<li class="topic_remove"><a href="#" class="topic_href">Delete Topic</a></li>
 		</div>
