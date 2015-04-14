@@ -1,6 +1,7 @@
 <?php
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == "POST") :
+	session_start();
 $connection = new mysqli('localhost', 'root', '', 'anime');
 	$password = $_POST['password'];
 	$query = 'SELECT * FROM users';
