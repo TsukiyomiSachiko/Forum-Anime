@@ -4,7 +4,7 @@
 
 	$connection = new mysqli('localhost', 'root', '', 'anime');
 	session_start();
-	$user_id = "7";
+	$user_id = "1";
 
 	if(isset($_SESSION['login'])):
 		$user_id = $_SESSION['login'];

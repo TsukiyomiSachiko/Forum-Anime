@@ -498,6 +498,7 @@ div.adminboard_pin_div {
 	border: 2px solid gray;
 	border-radius: 10px;
 	float:left;
+	margin-top: 50px;
 }
 
 span.create_pin_error {
