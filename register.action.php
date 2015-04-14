@@ -9,12 +9,10 @@
 	else:
 		foreach($results as $result):
 			if($result['username'] == $username):
-				echo'Username is already taken';
-				$website = "register.php";
+				header('location:register.php?false=usertaken');
 				break;
 			elseif($result['email'] == $email):
-				echo'Email already taken';
-				$website = "register.php";
+				header('location:register.php?false=mailtaken');
 				break;
 			else:
 				if($_POST['age'] == 'Under 13'):
@@ -24,14 +22,14 @@
 				elseif($_POST['age'] == '18 or above'):
 					$age = 3;
 				endif;
-				$username = $_POST['username'];
-				$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-				$email = $_POST['email'];
-				$first_name = $_POST['first_name'];
-				$last_name = $_POST['last_name'];
-				$query = "insert into users(username, password, email, age, first_name, last_name, phonenumber) values
-						  ('$username', '$password', '$email', '$age', '$first_name', '$last_name', 1111111111);";
-				mysqli_query($connection, $query);
 			endif;
 		endforeach;
+	$username = $_POST['username'];
+	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+	$email = $_POST['email'];
+	$first_name = $_POST['first_name'];
+	$last_name = $_POST['last_name'];
+	$query = "insert into users(username, password, email, age, first_name, last_name, phonenumber) values
+				('$username', '$password', '$email', '$age', '$first_name', '$last_name', 1111111111);";
+	mysqli_query($connection, $query);
 	endif;
