@@ -1,8 +1,5 @@
 <?php 
-	session_start();
-
-	if(isset($_GET['content'])):
-		$content = $_GET['content'];
-	endif;
-
-	// uit de database halen (renoveren)
+		$connection = new mysqli('localhost', 'root', '', 'anime');
+		$query = "SELECT contents FROM comments"; //anders uitlijnen indien nodig
+		$result = $connection->query($query);
+		$content = $result->fetch_all(MYSQLI_ASSOC);

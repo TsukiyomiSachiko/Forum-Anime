@@ -353,7 +353,7 @@ li.topic_create {
 
 .topic_create_title {
 	display:inline;
-	height: 15px;
+	height: 20px;
 	width: 800px;
 	margin-top: 40px;
 }
@@ -372,6 +372,12 @@ li.topic_create {
 textarea.topic_create_title {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	background-color: rgba(148, 215, 200, 0.5);
+}
+
+input.confirm {
+	margin-top: 20px;
+	width: 140px;
+	height: 30px;
 }
 
 

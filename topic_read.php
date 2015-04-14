@@ -16,7 +16,7 @@
 		</div>
 		<div class="content"> 
 			<?php foreach ($content as $contents) :
-				$contents['content'];	
+				print $contents['contents'];	
 			endforeach; ?>
 		</div>
 	</div>
