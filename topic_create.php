@@ -1,3 +1,8 @@
+<?php  $page = 'create';
+	require'small_codebehind/header.php';
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,10 +11,10 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<?php require'small_codebehind/header.php' ?>
-		<form class="topic_create" action="topic_main.php">
+		<form class="topic_create" action="topic_read.php">
 			<h2>What is your topic about?</h2>
 			<span class="topic_create_reason">
+				<input type="hidden" value="<?=$_SESSION['login']?>">
 				<input class="topic_create_reason" type="radio" name="reason" value="1"><label>A story</label>
 				<input class="topic_create_reason" type="radio" name="reason" value="2"><label>A question</label>
 				<input class="topic_create_reason" type="radio" name="reason" value="3"><label>A discution</label>

@@ -1,13 +1,13 @@
 <?php 
 	 if ($page == "main"):
 		$connection = new mysqli('localhost', 'root', '', 'anime');
-		$query = "SELECT topics.name AS postname, users.username AS username, topics.date AS postdate, topics.reason AS reason FROM topics LEFT JOIN users ON users.id = topics.user_id"; //anders uitlijnen indien nodig
+		$query = "SELECT topics.name AS postname, users.username AS username, topics.date AS postdate, topics.reason AS reason, comments.contents AS content FROM topics LEFT JOIN users ON users.id = topics.user_id LEFT JOIN comments ON comments.topic_id = topics.id"; //anders uitlijnen indien nodig
 		$result = $connection->query($query);
 		$topics = $result->fetch_all(MYSQLI_ASSOC);
-	elseif ($page == "create"):
+	else:
 		if(empty($_POST['reason']) or empty($_POST['title']) or empty($_POST['content']) or empty($_POST['date']) or empty($_POST['user_id'])):
 			echo"Not done";
-		else:
+		elseif ($page == "create"):
 			foreach($results as $result):
 				if($result["title"] == $title):
 					echo"title is already taken";

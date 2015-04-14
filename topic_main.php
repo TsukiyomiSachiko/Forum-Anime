@@ -1,5 +1,5 @@
-<?php $page = "main"; 
-	require "topic.action.php";?>
+<?php $page = 'main'; 
+	require 'topic.action.php';?>
 
 <!DOCTYPE html>
 <html>
