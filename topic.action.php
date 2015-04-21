@@ -1,14 +1,12 @@
 <?php 
 	session_start();
 	$connection = new mysqli('localhost', 'root', '', 'anime');
+
 	if(isset($_GET['action'])) {
 		$action = $_GET['action'];
 	} else {
 		$action = "hello ";
 	}
-
-
-
 
 	 switch ($action) {
 
@@ -17,19 +15,22 @@
 	 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	 			// Is any field empty?
 		 		if(empty($_POST['reason']) or empty($_POST['title']) or empty($_POST['content'])) {
+		 			/**
+		 			 * @todo  make nice message for user
+		 			 */
 					echo "Not done";
 		 		} else {
 					$reason = $_POST["reason"];
 					$title = $_POST["title"];
 					$content = $_POST["content"];
-					if(isset($_POST['login'])):
+					if(isset($_POST['login'])) {
 						$user_id = $_SESSION['login'];
-					else:
+					} else {
 						$user_id = 0;
-					endif;
-					$query_t = "insert into topics(reason, name, content, user_id) values
-							  ('$reason', '$title', '$content', '$user_id');";
-					$connection->query($query_t);
+					}
+					$query = "INSERT INTO topics(reason, name, content, user_id) VALUES
+							  ('$reason', '$title', '$content', '$user_id')";
+					$connection->query($query);
 				}
 			}
 	 		break;
