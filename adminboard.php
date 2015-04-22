@@ -14,7 +14,9 @@
 		<div class="adminboard_pin_div">
 				<h1 class="adminboard_text"><?= $pin['title'] ?></h1>
 				<h3 class="adminboard_text"><?= $pin['date'] ?></h3>
-				<h2 class="adminboard_text"><?= $pin['comment'] ?></h2>
+				<h2 class="adminboard_text"><?= $pin['comment'] ?></h2><br>
+				<a class="adminboard_edit" href="adminboard_delete.php?id=<?= $pin['id']?>">DELETE</a>
+				<a class="adminboard_edit" href="adminboard_edit.php?id=<?= $pin['id']?>"><img src="images/edit.png"></a>
 		</div>
 	<?php endforeach; ?>
 </div>

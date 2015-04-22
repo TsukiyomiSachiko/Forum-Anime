@@ -29,7 +29,7 @@
 			endif;
 		endif;
 	else:
-			$query = "select date, title, comment from adminboard";
+			$query = "select id, date, title, comment from adminboard";
 			$result = $connection->query($query);
 			$pins = $result->fetch_all(MYSQLI_ASSOC);
  	endif;
