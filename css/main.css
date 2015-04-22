@@ -316,7 +316,9 @@ ul.topic_topics {
 }
 
 div.topic_alltopics ul.topic_topics li.topic_postname {
-	border: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
 	display:inline-block;
 	float:left;
 	width:67%;
@@ -324,7 +326,8 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 }
 
 .topic_username {
-	border: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
 	display:inline-block;
 	float:left;
 	width:8.5%;
@@ -332,7 +335,8 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 }
 
 .topic_reason {
-	border: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
 	display:inline-block;
 	float:left;
 	width:10%;
@@ -340,7 +344,8 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 }
 
 .topic_edit {
-	border: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
 	display:inline-block;
 	float:left;
 	width:6%;
@@ -348,11 +353,21 @@ div.topic_alltopics ul.topic_topics li.topic_postname {
 }
 
 .topic_remove {
-	border: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
 	display:inline-block;
 	float:left;
 	width:7%;
 	background-color: rgba(148, 215, 200, 0.7);
+}
+
+.link_name {
+	text-decoration: none;
+}
+
+div.border {
+	border-top: 1px solid;
+	width: 98.92%;
 }
 
 /*Start topic_create here*/

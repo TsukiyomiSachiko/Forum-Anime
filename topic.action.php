@@ -1,7 +1,46 @@
 <?php 
+	//base
 	session_start();
 	$connection = new mysqli('localhost', 'root', '', 'anime');
 
+
+	//functions()
+	function loginsession() {
+	if (isset($_SESSION["login"])) { ?>
+		<input type="hidden" value="<?=$_SESSION['login']?>">
+	<?php }
+		}
+
+	function maxtitle($title) {
+	  if (isset($title)):
+	    $title = (string) $title;
+	    $textarr = str_split($title);
+	    $count = 0;
+	    foreach ($textarr as $letter) :
+	      $count++;
+	      if (empty($output)):
+	        $output = $letter;
+	      else :
+	        $output = $output.$letter;
+	      endif;
+	      if ($count == 145) :
+	        $output = $output."...";
+	        break;
+	      endif;
+	    endforeach;
+	    return $output;
+	  else:
+	    return 'No string given!';
+	  endif;
+	}
+
+	function short_border() { ?>
+				<div class="border"></div>
+				<?php
+	}
+
+
+	//operators
 	if(isset($_GET['action'])) {
 		$action = $_GET['action'];
 	} else {
@@ -9,38 +48,16 @@
 	}
 
 	 switch ($action) {
-
 	 	case 'create':
-	 		// Is this a post request?
-	 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	 			// Is any field empty?
-		 		if(empty($_POST['reason']) or empty($_POST['title']) or empty($_POST['content'])) {
-		 			/**
-		 			 * @todo  make nice message for user
-		 			 */
-					echo "Not done";
-		 		} else {
-					$reason = $_POST["reason"];
-					$title = $_POST["title"];
-					$content = $_POST["content"];
-					if(isset($_POST['login'])) {
-						$user_id = $_SESSION['login'];
-					} else {
-						$user_id = 0;
-					}
-					$query = "INSERT INTO topics(reason, name, content, user_id) VALUES
-							  ('$reason', '$title', '$content', '$user_id')";
-					$connection->query($query);
-				}
-			}
+	 		
 	 		break;
 	 	
 	 	case 'update':
-	 		# code...
+
 	 		break;
 
 	 	case 'delete':
-	 		# code...
+
 	 		break;
 
 	 	default:
@@ -50,9 +67,7 @@
 	 		break;
 	 }
 
-
-
-
+	 //comments / later stuff
 	// <?php 
 	// 	$connection = new mysqli('localhost', 'root', '', 'anime');
 	// 	$query = "SELECT contents FROM comments"; //anders uitlijnen indien nodig
