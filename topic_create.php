@@ -14,7 +14,7 @@
 		<form class="topic_create" action="topic_read.php?action=create" method="post">
 			<h2>What is your topic about?</h2>
 			<span class="topic_create_reason">
-				<input type="hidden" value="<?=$_SESSION['login']?>">
+				<?php loginsession(); ?>
 				<input class="topic_create_reason" type="radio" name="reason" value="A story"><label>A story</label>
 				<input class="topic_create_reason" type="radio" name="reason" value="A question"><label>A question</label>
 				<input class="topic_create_reason" type="radio" name="reason" value="A discussion"><label>A discussion</label>
