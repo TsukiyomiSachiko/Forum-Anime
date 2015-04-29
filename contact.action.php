@@ -4,6 +4,11 @@
   $title ="";
   $message ="";
 
+  $Tempname ="";
+  $Tempemail ="";
+  $Temptitle ="";
+  $Tempmessage ="";
+
   $nameError ="";
   $emailError ="";
   $titleError ="";
@@ -13,32 +18,49 @@
   if(isset($_POST['submit'])){
   	if(empty($_POST['name'])){
   		$nameError = "Name is required";
+  		$successMessage = "Please fill in all the forms correctly.";
   	}
   	else{
   		$name = test_input($_POST['name']);
+  		$Tempname = $_POST['name'];
   		if(!preg_match('/^[a-zA-Z ]*$/',$name)){
-            $nameError = "Only letters and white space allowed"; 
+            $nameError = "Only letters and white space allowed";
+  			$successMessage = "Please fill in all the forms correctly.";
+  			$Tempname = $_POST['name'];
          }
   	}
 
   	if(empty($_POST['email'])){
-       $emailError = "Email is required";
-    } 
-   	else{
-      $email = test_input($_POST['email']);
+       	$emailError = "Email is required";
+  		$successMessage = "Please fill in all the forms correctly.";
+    }
+	else{
+	    	if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
+	  			$email = test_input($_POST['email']);
+  				$Tempemail = $_POST['email'];
+			}
+			else {
+	  			$emailError = "This is not a valid email adress";
+  				$successMessage = "Please fill in all the forms correctly.";
+  				$Tempemail = $_POST['email'];
+			}
     }
 
     if(empty($_POST['title'])){
-      $titleError = "Title is required";
+      	$titleError = "Title is required";
+  		$successMessage = "Please fill in all the forms correctly.";
     }
    	else{ 
-	  $title = test_input($_POST['title']);  
+	  	$title = test_input($_POST['title']);
+  		$Temptitle = $_POST['title'];  
 	}
    if(empty($_POST['message'])){
-      $messageError = "Message is required";
+      	$messageError = "Message is required";
+  		$successMessage = "Please fill in all the forms correctly.";
     } 
    	else{ 
-	  $message = test_input($_POST['message']);  
+	  	$message = test_input($_POST['message']);
+  		$Tempmessage = $_POST['message'];  
 	}
 
 	if(!($name=='')&&!($email=='')&&!($title=='')&&!($message=='')){
@@ -70,7 +92,11 @@ $msg1 = " $name Contacted Us.
 
 if(mail($email, $headers, $msg ) && mail("animeforum.stajl@gmail.com", $header, $msg1 ))
     {
-	$successMessage = "Message sent successfully.";
+		$successMessage = "Message sent successfully.";
+		$Tempname ="";
+		$Tempemail ="";
+		$Temptitle ="";
+		$Tempmessage ="";
     }
   }
 else { $emailError = "Invalid Email"; }
